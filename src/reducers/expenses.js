@@ -12,6 +12,8 @@ export default (state = [], action) => {
           ...action.updates,
         };
       });
+    case 'SET_EXPENSES':
+      return action.expenses;
     default:
       return state;
   };
